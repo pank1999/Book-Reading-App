@@ -1,0 +1,18 @@
+<h2>Untouchable</h2>
+
+<p>
+  {{ pages[currentPage] }}
+</p>
+
+<div class="pagination" >
+    <div class="icon"  (click)="setCurrentPage('pre')" >
+      <mat-icon  >keyboard_arrow_left</mat-icon>
+       <span>prev</span>
+    </div>
+    <span>{{currentPage+1}}</span>
+
+    <div class="icon"  (click)="setCurrentPage('next')"  >
+      <span>next</span>
+      <mat-icon >keyboard_arrow_right</mat-icon>
+    </div>
+</div>
